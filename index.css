@@ -15,6 +15,10 @@ a {
   box-sizing: border-box;
 }
 
+h1{
+    text-align: center;
+}
+
 
 .container {
     width: 100vw;
@@ -46,6 +50,7 @@ a {
     align-items: center;
   
   }
+
   
   .callButton span{
     font-size: 25px;
@@ -67,16 +72,33 @@ a {
   
   .footer {
     width: 100%;
-    height: 100px;
-    border-top: 1px solid #eaeaea;
+    /* height: 100px; */
+    border-top: 1px solid #ddd;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .footer img {
-    margin-left: 0.5rem;
+  .footerInfoContainer{
+      display: flex;
+      flex-direction: row;
+      max-width: 40%;
+
   }
+
+  .footerInfoContainer h1{
+    margin:0;
+    margin-right: 20px;
+    height: 100%;
+  }
+  .footerInfoContainer h3{
+      margin:0;
+      margin-bottom: 10px;
+  }
+  
+
+
+
   
   .infoWrapper{
     background-image: url(https://www.harpersbazaararabia.com/public/images/2019/08/01/lg-signature-kitchen.jpg);
@@ -86,7 +108,7 @@ a {
     background-position-y: center;
     padding: 20px;
     box-sizing: border-box;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   
   .footer a {
@@ -235,7 +257,17 @@ a {
       width: 100%;
       flex-direction: column;
     }
-  
+    
+    .footer{
+        flex-direction: column;
+        padding:10px;
+        align-items: flex-start;
+    }
+    .footerInfoContainer{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
     .callButton{
       width: 100%;
       position: fixed;
